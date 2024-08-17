@@ -30,12 +30,11 @@ function render(variables = {}) {
   if (variables.includeCover == false) cover = "<div class='cover'></div>";
 
   let name = variables.name == null ? "Lucy" : variables.name;
-  let lastName = variables.lastName == null ? "" : variables.lastName;
-  let twitter = variables.twitter == null ? "twitter" : variables.twitter;
-  let Github = variables.Github == null ? "Github" : variables.Github;
-  let Linkedin = variables.Linkedin == null ? "Linkedin" : variables.Linkedin;
-  let Instagram =
-    variables.Instagram == null ? "Instagram" : variables.Instagram;
+  let lastName = variables.lastName == null ? "Ruiz" : variables.lastName;
+  let twitter = variables.twitter == null ? "4geeks" : variables.twitter;
+  let github = variables.github == null ? "4geeks" : variables.github;
+  let linkedin = variables.linkedin == null ? "4geeks" : variables.linkedin;
+  let instagram = variables.instagram == null ? "4geeks" : variables.instagram;
   let role = variables.role == null ? "Web Developer" : variables.role;
   let city = variables.city == null ? "Miami" : variables.city;
   let country = variables.country == null ? "USA" : variables.country;
@@ -48,9 +47,9 @@ function render(variables = {}) {
           <h3>${city},${country}</h3>
           <ul class="position-right">
             <li><a href="https://twitter.com/${twitter}"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="https://github.com/${Github}"><i class="fab fa-github"></i></a></li>
-            <li><a href="https://linkedin.com/${Linkedin}"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="https://instagram.com/${Instagram} "><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://github.com/${github}"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://linkedin.com/${linkedin}"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://instagram.com/${instagram} "><i class="fab fa-instagram"></i></a></li>
           </ul>
         </div>
     `;
